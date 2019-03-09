@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+canvas {
+  background: #eee;
+  display: block;
+  margin: 0 auto;
+}
+
+#game-area{
+  background-image: url('bg-img.jpg');
+  height: 650px;
+}
+
+#game-area h2{
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+}
