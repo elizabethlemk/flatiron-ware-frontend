@@ -144,7 +144,7 @@ function endGame() {
 // Create User
 //------------------------------------------//
 function createUser(userName) {
-  fetch('http://localhost:3000/users',{
+  fetch('https://flatiron-ware-backend.herokuapp.com/users',{
     method: 'POST',
     headers: {
       "content-type": "application/json",
@@ -173,7 +173,7 @@ function createUser(userName) {
 //------------------------------------------//
 
 function postScore(user, score) {
-  fetch('http://localhost:3000/games',{
+  fetch('https://flatiron-ware-backend.herokuapp.com/games',{
     method: 'POST',
     headers: {
       "content-type": "application/json",
@@ -195,7 +195,7 @@ function postScore(user, score) {
 //------------------------------------------//
 
 function renderAllUsers() {
-  fetch('http://localhost:3000/users')
+  fetch('https://flatiron-ware-backend.herokuapp.com/users')
   .then(resp => resp.json())
   .then(json => {
     allUsers.push(json)
@@ -209,7 +209,7 @@ function renderAllUsers() {
 function renderAllScores() {
     let sortedArr = []
     const allScores = document.querySelector('#top-players')
-    fetch('http://localhost:3000/games')
+    fetch('https://flatiron-ware-backend.herokuapp.com/games')
     .then(resp => resp.json())
     .then(json => {
       json.forEach(obj => {
