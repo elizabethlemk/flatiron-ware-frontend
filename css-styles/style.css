@@ -5,6 +5,12 @@
   margin: 0px;
 }
 
+footer {
+  font-family: monospace;
+  text-align: center;
+  position: relative;
+}
+
 .player-scores{
   padding: 20px;
   text-align: center;
